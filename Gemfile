@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'nokogiri'
 gem 'activerecord'
+gem 'pony'
 
 group :development, :test do
   gem 'sqlite3'
