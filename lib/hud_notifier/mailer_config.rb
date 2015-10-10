@@ -1,6 +1,6 @@
 Pony.options = {
   via: :smtp,
-  from: 'no-reply@hud-notifier.herokuapp.com',
+  from: 'HUD Notifier <no-reply@hud-notifier.herokuapp.com>',
   via_options: {
     address: 'smtp.sendgrid.net',
     port: '587',

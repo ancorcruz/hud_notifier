@@ -4,6 +4,7 @@ require 'nokogiri'
 require 'open-uri'
 require 'active_record'
 require 'pony'
+require 'erb'
 
 require 'database'
 require 'mailer_config'
@@ -28,6 +29,6 @@ module HudNotifier
       new_deals << deal if deal.save
     end
 
-    Notifier.new(new_deals).notify unless new_deals.empty?
+    Notifier.send(new_deals) unless new_deals.empty?
   end
 end

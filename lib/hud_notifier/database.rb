@@ -1,5 +1,3 @@
-require 'erb'
-
 module HudNotifier
   module Database
     module_function
